@@ -1,0 +1,12 @@
+function titleCase(str) {
+  let strArray = str.split(" ");
+  let newStr = '';
+   for (let i = 0; i < strArray.length; i++) {
+     let lower = strArray[i].toLowerCase();
+    newStr += lower.charAt(0).toUpperCase() + lower.slice(1) + ' ';
+   }
+   return newStr.trim();
+
+}
+
+titleCase("sHoRt AnD sToUt");

@@ -1,0 +1,10 @@
+function findLongestWordLength(str) {
+  const strArray = str.split(" ")
+  let arrayWordLengths = [];
+  for(let i=0; i < strArray.length; i++){
+    arrayWordLengths.push(strArray[i].length)
+  }
+  return Math.max(...arrayWordLengths);
+}
+
+console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"))

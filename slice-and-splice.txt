@@ -1,0 +1,8 @@
+function frankenSplice(arr1, arr2, n) {
+  let nElementArr2 =arr2.slice(0,n) 
+  let restElementsArr2 = arr2.slice(n) 
+  const newArray = [...nElementArr2,...arr1,...restElementsArr2]
+  return newArray;
+}
+
+frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2)

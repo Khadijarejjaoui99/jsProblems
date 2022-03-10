@@ -1,0 +1,13 @@
+function largestOfFour(arr) {
+  let maxNumbers=0;
+  let arrWithLargestNumbers = []
+  for(let i = 0 ; i < arr.length; i++ ){
+     maxNumbers = Math.max(...arr[i])
+    arrWithLargestNumbers.push(maxNumbers)
+  }   
+    
+  
+  return arrWithLargestNumbers;
+}
+
+console.log(largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]));

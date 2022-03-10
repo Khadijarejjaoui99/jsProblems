@@ -1,0 +1,8 @@
+function reverseString(str) {
+ const strArr = [...str];
+ const strArrReverse = strArr.reverse();
+ const reverseStr = strArrReverse.join("")
+ return reverseStr;
+}
+
+console.log(reverseString("hello"));

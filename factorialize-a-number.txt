@@ -1,0 +1,11 @@
+function factorialize(num) {
+  let fact =1;
+  if(num >0){
+    for(let j=1; j<=num;j++){
+     fact*=j;
+   }
+  }
+  return fact;
+
+}
+console.log(factorialize(10))
